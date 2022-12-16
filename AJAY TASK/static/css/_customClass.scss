@@ -1,0 +1,161 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+
+
+.header .menu-icon {
+    display: none;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    width: 30px;
+    height: 25px;
+}
+
+@media screen and (max-width: 992px) {
+    .header .menu-icon {
+        display: block;
+    }
+}
+
+.menu-icon span {
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #000;
+}
+
+.menu-icon span:nth-child(1) {
+    top: 0px;
+    left: 0px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    transform-origin: center;
+    /* transform-box: ; */
+}
+
+.menu-icon span:nth-child(2) {
+    width: 20px;
+    top: 10px;
+    right: 0;
+    -webkit-transition: 0.5s;
+    transition: all 0.5s;
+    // transform-origin: center;
+}
+
+.menu-icon span:nth-child(3) {
+    width: 30px;
+    top: 20px;
+    left: 0px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    transform-origin: center;
+}
+
+.open-menu {
+    #span1 {
+        transform: rotate(45deg);
+        top: 10px;
+    }
+
+    #span3 {
+        transform: rotate(135deg);
+        top: 10px;
+    }
+
+    span:nth-child(2) {
+        opacity: 0;
+        right: 25px;
+        transition: 0.5s;
+
+    }
+}
+
+.close-menu {
+    height: calc(100vh - 58px) !important;
+}
+
+
+.container form {
+    background-color: white;
+    color: #888888;
+    text-align: left;
+    padding: 20px;
+}
+
+.form-group {
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+::placeholder {
+    font-size: 12px;
+}
+
+.form-check {
+    background-color: transparent !important;
+    margin: 10px;
+
+}
+
+
+.container input,
+.container textarea {
+    padding-left: 32px;
+    border-color: transparent;
+    background-color: #fff;
+    border-radius: 0px;
+}
+
+.container textarea {
+    padding-left: 5px !important;
+    border-color: transparent;
+    background-color: #fff;
+    border-radius: 0px;
+    width: 95%;
+}
+
+.container .btn-default {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    padding: 15px 36px;
+    background-color: #fff;
+    border-radius: 0px;
+    border: 0px;
+    color: #F1F1F1;
+}
+
+
+
+.container .icon {
+    position: relative;
+    float: left;
+    margin-left: 8px;
+    margin-top: -17px;
+    z-index: 2;
+    font-size: 12px;
+    color: #222222;
+}
+
+
+.form-check-label {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.form-check-input {
+    width: 5px !important;
+    height: 20px !important;
+    padding-left: 18px !important;
+    margin-top: -2px !important;
+}
